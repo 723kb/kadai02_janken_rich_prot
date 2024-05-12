@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/output.css">
+  <link rel="stylesheet" href="./CSS/animation.css">
+  <title>チーズアカデミー</title>
+</head>
+<!-- body -->
+<!-- m,pの数字に*4したらpxになる -->
+
+<body class="w-[1200px] mx-auto overflow-x-hidden">
+  <div id="TOP" class="flex flex-col items-center bg-amber-50">
+    <!-- header [start] -->
+    <header class="flex justify-between">
+      <div class="w-full flex justify-center items-center mr-24">
+        <img src="./img/header_logo.png" class="max-w-full">
+      </div>
+      <nav class="py-12 text-xl">
+        <div class="flex w-2/3" id="global_nav">
+          <ul class="flex space-x-12 list-none">
+            <li><a href="#ABOUT" class="ml-12 my-12 hover:text-gray-900">ABOUT</a></li>
+            <li><a href="#COURSE" class="my-12 hover:text-gray-900">COURSE</a></li>
+            <li><a href="#NEWS" class="my-12 hover:text-gray-900">NEWS</a></li>
+            <li><a href="#ACCESS" class="my-12 hover:text-gray-900">ACCESS</a></li>
+            <li><a href="#CONTACT" class="my-12 hover:text-gray-900">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- main [start] -->
+    <main class="mb-36">
+      <!-- main visual [start] -->
+      <section>
+        <div class="relative mx-auto" id="mv_wrap">
+          <img src="./img/mv02.jpg" alt="Main Background Image" class="w-full h-full object-cover active sm:w-full sm:h-96 md:w-full md:h-auto">
+          <img src="./img/mv03.jpg" alt="Main Background Image" class="w-full h-full object-cover sm:w-full sm:h-96 md:w-full md:h-auto">
+          <img src="./img/mv04.jpg" alt="Main Background Image" class="w-full h-full object-cover sm:w-full sm:h-96 md:w-full md:h-auto">
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+            <!-- float-textのクラス名をつけてアニメを追加 -->
+            <h1 class="mb-8 text-5xl font-bold text-white text-nowrap float-text">セカイを変えるチーズを作ろう</h1>
+            <p class="text-3xl text-white text-nowrap float-text">チーズ職人養成学校「チーズアカデミーTOKYO」</p>
+          </div>
+        </div>
+      </section>
+      <!-- main visual [end] -->
+      <!-- ABOUT [start] -->
+      <section id="ABOUT" class="flex flex-col items-center  mt-14">
+        <h2 class="text-2xl text-amber-500 font-bold mb-7">ABOUT</h2>
+        <p class="text-lg mb-16">
+          チーズアカデミーについて
+        </p>
+        <p class="mb-10">チーズアカデミーは、チーズ職人養成学校です。
+        </p>
+        <p>
+          チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。
+        </p>
+        <p class="mb-10">
+          そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。
+        </p>
+        <p class="mb-10">
+          そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。
+        </p>
+        <p>
+          卒業後、チーズ自給自足のバックアップはもちろんのこと、
+        </p>
+        <p class="mb-20">
+          チーズ職人への就職・転職もサポートします。
+        </p>
+        <!-- 以下スライドショー -->
+        <!-- アニメーションは別ファイル参照 -->
+        <div class="slideshow flex overflow-hidden">
+          <img src="./img/about_images.png" alt="" class="slideshow-item animate-slide">
+          <img src="./img/about_images.png" alt="" class="slideshow-item animate-slide">
+          <img src="./img/about_images.png" alt="" class="slideshow-item animate-slide">
+        </div>
+      </section>
+      <!-- ABOUT [end] -->
+      <!-- COURSE [start] -->
+      <section id="COURSE" class="flex flex-col items-center mt-14">
+        <h2 class="text-2xl font-bold mb-7">COURSE</h2>
+        <p>
+          未経験からでもスタートができるよう、カリキュラムは多くの専門家や
+        </p>
+        <p class="mb-14">現役チーズ職人のアドバイスのもと、作られました。
+        </p>
+        <!-- １段目 -->
+        <div class="fadeIn flex items-center justify-center  w-full max-w-[1200px] mx-auto bg-slate-50">
+          <div class="w-1/2">
+            <img src="./img/c01.jpg" alt="">
+          </div>
+          <div class=" w-1/2 flex items-center justify-center">
+            <span>
+              <h2 class="text-lg font-bold mb-10">本格的な農園を使った<span class="text-amber-500">実地研修</span></h2>
+              <p>チーズアカデミーでは、本格的な農園を使った実地研修を</p>
+              <p>行うことができます。プロとして活躍するチーズ職人も
+              </p>
+              <p>使用するような、広大で環境も整った農園を余すところ</p>
+              <p>なく使い、卒業時には本格的なチーズを自分の力で作れる
+              </p>
+              <p>実践力の養成を目指します。
+              </p>
+            </span>
+          </div>
+        </div>
+        <!-- ２段目 -->
+        <div class="flex items-center justify-center  w-full max-w-[1200px] mx-auto bg-slate-50">
+          <div class="w-full flex items-center justify-center">
+            <span>
+              <h2 class="text-lg font-bold mb-10"><span class="text-amber-500">必要な知識</span>もしっかりと取得</h2>
+              <p>チーズ作りには、しっかりとした食に関する知識が</p>
+              <p>欠かせません。チーズアカデミーでは、一流講師陣による、
+              </p>
+              <p>チーズ作りに必要ないろはを余すところなく学べます。</p>
+              <p>チーズそのものでなく、栄養学全般を学ぶことも
+              </p>
+              <p>可能ですので、チーズ以外への展開も夢ではないでしょう。
+              </p>
+            </span>
+          </div>
+          <div class="w-full">
+            <img src="./img/c02.jpg" alt="">
+          </div>
+        </div>
+        <div class="flex justify-center  w-full max-w-[1200px] mx-auto bg-slate-50">
+          <div class="w-full ">
+            <img src="./img/c03.jpg" alt="">
+          </div>
+          <!-- ３段目 -->
+          <div class="w-full  flex items-center justify-center flex-col">
+            <div>
+              <h2 class="text-lg font-bold mb-10"><span class="text-amber-500">卒業制作</span>はティスティング審査あり</h2>
+              <p>チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。</p>
+              <p>卒業制作として、チーズ作りを実際に行います。卒業後、
+              </p>
+              <p>一般参加によるティスティング審査があるため、作り手の
+              </p>
+              <p>目線だけでなく、消費者の目線から、卒業制作作品としての
+              </p>
+              <p>チーズを、しっかりと評価いただくことができます。
+              </p>
+              <span class="text-amber-500 font-bold"><a href="more.html">
+                  <p class="mt-7">view more →</p>
+                </a></span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- COURSE [end] -->
+      <!-- NEWS [start] -->
+      <section id="NEWS" class="flex flex-col items-center mt-14">
+        <h2 class="text-2xl text-amber-500 font-bold mb-7">NEWS</h2>
+        <p class="text-lg mb-16">
+          ニュース
+        </p>
+        <div class="flex  gap-8">
+          <div class="w-[300px] hover:opacity-60">
+            <img src="./img/n01.jpg" alt="">
+            <p class="mt-8 mb-6">2016/11/18</p>
+            <div class="text-sm">
+              <p>チーズアカデミー卒業生のコスゲさんによる</p>
+              <p>チーズだけをふんだんに使用した話題のピザ屋</p>
+              <p>「Kosuge Pizza」が渋谷でオープンしました！</p>
+            </div>
+          </div>
+          <div class="w-[300px] hover:opacity-60">
+            <img src="./img/n02.jpg" alt="">
+            <p class="mt-8 mb-6">2016/11/18</p>
+            <div class="text-sm">
+              <p>チーズアカデミー卒業生のコスゲさんによる</p>
+              <p>チーズだけをふんだんに使用した話題のピザ屋</p>
+              <p>「Kosuge Pizza」が渋谷でオープンしました！</p>
+            </div>
+          </div>
+          <div class="w-[300px] hover:opacity-60">
+            <img src="./img/n03.jpg" alt="">
+            <p class="mt-8 mb-6">2016/11/18</p>
+            <div class="text-sm">
+              <p>チーズアカデミー卒業生のコスゲさんによる</p>
+              <p>チーズだけをふんだんに使用した話題のピザ屋</p>
+              <p>「Kosuge Pizza」が渋谷でオープンしました！</p>
+            </div>
+          </div>
+        </div>
+        <button class="w-80 h-14 text-lg text-white  bg-amber-300 hover:bg-red-500 my-14">More</button>
+      </section>
+      <!-- NEWS [end] -->
+      <!-- ACCESS [start] -->
+      <section id="ACCESS" class="flex flex-col items-center bg-slate-50">
+        <h2 class="text-2xl font-bold mt-7 mb-8">ACCESS</h2>
+        <p class="text-lg mb-16">
+          会社情報
+        </p>
+        <!-- map -->
+        <div class="relative w-full h-96 mb-16">
+          <iframe class="absolute top-0 left-0 w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6482.6226010847695!2d139.70041661195026!3d35.66933613051208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9fa9e2e881%3A0x35396adb5ba7ce03!2z44K444O844K644Ki44Kr44OH44Of44O85p2x5Lqs!5e0!3m2!1sja!2sjp!4v1713638338521!5m2!1sja!2sjp"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
+        <div class="flex gap-8">
+          <div>
+            <p class="h-12 mb-8">学校名</p>
+            <p class="h-12 mb-8">事務所所在地</p>
+            <p class="h-12 mb-8">TEL</p>
+            <p class="h-12 mb-8">FAX</p>
+            <p class="h-12 mb-16">MAIL</p>
+          </div>
+          <div>
+            <p class="h-12 mb-8">チーズアカデミーTOKYO</p>
+            <p class="h-12 mb-8">〒107-0061東京都港区北青山3-5-6 青朋ビル2F</p>
+            <p class="h-12 mb-8">03-5413-5045</p>
+            <p class="h-12 mb-8">03-5413-5046</p>
+            <p class="h-12 mb-16">dummy@cheeseacademy.tokyo</p>
+          </div>
+        </div>
+      </section>
+      <!-- ACCESS [end] -->
+      <!-- CONTACT [start] -->
+      <section id="CONTACT" class="flex flex-col items-center">
+        <h2 class="text-2xl font-bold mt-7 mb-8">CONTACT</h2>
+        <p class="text-lg mb-16">
+          説明会お申し込み・お問い合わせ
+        </p>
+        <p>ぜひ1度、足を運んでみませんか。説明会は随時開催中。</p>
+        <p class="mb-8">その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
+        <p>※チーズアカデミーは実際には存在しません。</p>
+        <p class="mb-16">間違っても問い合わせしないようお願いいたします。</p>
+        <div>
+          <form action="">
+            <table class="border-collapse border border-gray-400 border-l-0 border-r-0">
+              <tr>
+                <th class="w-60 border border-gray-400 border-l-0 text-left">
+                  <div class="ml-4 font-normal">名前</div>
+                </th>
+                <td class="w-96 border border-gray-400 border-r-0">
+                  <input type="text" name="名前" class="w-80 h-9 ml-2 my-2 border border-gray-400">
+                </td>
+              </tr>
+              <tr>
+                <th class="w-60 border border-gray-400 border-l-0  text-left">
+                  <div class="ml-4 font-normal">カナ</div>
+                </th>
+                <td class="w-96 border border-gray-400 border-r-0">
+                  <input type="text" name="カナ" class="w-80 h-9 ml-2 my-2 border border-gray-400">
+                </td>
+              </tr>
+              <tr>
+                <th class="w-60 border border-gray-400 border-l-0  text-left">
+                  <div class="ml-4 font-normal">メールアドレス</div>
+                </th>
+                <td class="w-96 border border-gray-400 border-r-0">
+                  <input type="email" name="email" class="w-80 h-9 ml-2 my-2 border border-gray-400">
+                </td>
+              </tr>
+              <tr>
+                <th class="w-60 border border-gray-400 border-l-0 text-left">
+                  <div class="ml-4 mr-16 font-normal">チーズアカデミーを知ったきっかけ</div>
+                </th>
+                <td class="w-96 border border-gray-400 border-r-0">
+                  <select name="きっかけ" id="" class="w-80 h-9 ml-2 my-2 border border-gray-400 appearance-none">
+                    <option disabled selected class="hidden"></option>
+                    <option>・google検索</option>
+                    <option>・SNS</option>
+                    <option>・紹介</option>
+                    <option>・たまたま通りかかった</option>
+                    <option>・その他</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="w-60 border border-gray-400 border-l-0 text-left align-top pt-4">
+                  <div class="ml-4 font-normal">志望動機</div>
+                </th>
+                <!-- accent-colorでチェックの色が変わる -->
+                <td class="flex flex-col ">
+                  <label for="reason1" class="ml-2 my-6">
+                    <input type="checkbox" id="reason1" class="w-4 h-4 accent-amber-300">
+                    <span class="pl-6">起業をしたい</span>
+                  </label>
+                  <label for="reason2" class="ml-2 my-6">
+                    <input type="checkbox" id="reason2" class="w-4 h-4 accent-amber-300">
+                    <span class="pl-6">チーズ系企業に就職・転職したい</span>
+                  </label>
+                  <label for="reason3" class="ml-2 my-6 text-nowrap">
+                    <input type="checkbox" id="reason3" class="w-4 h-4 accent-amber-300">
+                    <span class="pl-6">チーズと関わる仕事をしており、仕事に生かしたい</span>
+                  </label>
+                  <label for="reason4" class="ml-2 my-6 items-center">
+                    <input type="checkbox" id="reason4" class="w-4 h-4 accent-amber-300">
+                    <span class="pl-6">チーズの教養を身につけたい</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th class="w-60 border border-gray-400 border-l-0 text-left align-top pt-4">
+                  <div class="ml-4 font-normal">詳細</div>
+                </th>
+                <td class="border border-gray-400 border-r-0">
+                  <textarea name="詳細" id="" cols="30" rows="10"
+                    class="w-80 h-24 ml-2 my-2 border border-gray-400"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="flex justify-center">
+              <button type="submit" class="w-80 h-14 text-lg text-white bg-amber-300 hover:bg-red-500 mt-8">送信</button>
+            </div>
+          </form>
+      </section>
+      <!-- CONTACT [end] -->
+      <!-- ページトップボタン -->
+      <button id="topbtn">top</button>
+    </main>
+    <!-- main [end] -->
+    <!-- footer [start] -->
+    <footer class="w-full py-8 bg-slate-500">
+      <p class="text-white text-center">copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.</p>
+    </footer>
+    <!-- footer [end] -->
+  </div>
+  <!-- 以下JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

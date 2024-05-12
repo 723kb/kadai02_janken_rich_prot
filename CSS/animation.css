@@ -1,0 +1,47 @@
+/* スライドショー */
+/* 現在の位置から幅-100％分左方向に移動ループ */
+@keyframes loop-slide {
+  0% {
+    /* 開始 */
+    transform: translateX(0);
+  }
+
+  100% {
+    /* 終了 */
+    transform: translateX(-100%);
+  }
+}
+
+.slideshow {
+  overflow: hidden;
+  
+}
+
+.slideshow-item {
+  min-width: 100%; /* 画像の幅を100%に設定 */
+}
+
+.animate-slide {
+  animation: loop-slide 20s infinite linear; /* アニメーションの速度やループを調整 */
+}
+
+/* 文字が浮き出てくるアニメ */
+/* 開始時 50px下へ移動 透明度0 */
+/* 終了時 元の位置へ移動 不透明 */
+/* この動きで浮き出てくるように見える */
+@keyframes floatIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* アニメ時間2秒 等速 アニメ終了時間もスタイルを維持 */
+.float-text {
+  animation: floatIn 2.0s ease forwards;
+}
+
