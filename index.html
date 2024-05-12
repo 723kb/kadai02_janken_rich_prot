@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/output.css">
   <link rel="stylesheet" href="./CSS/animation.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <title>チーズアカデミー</title>
 </head>
 <!-- body -->
@@ -35,9 +37,12 @@
       <!-- main visual [start] -->
       <section>
         <div class="relative mx-auto" id="mv_wrap">
-          <img src="./img/mv02.jpg" alt="Main Background Image" class="w-full h-full object-cover active sm:w-full sm:h-96 md:w-full md:h-auto">
-          <img src="./img/mv03.jpg" alt="Main Background Image" class="w-full h-full object-cover sm:w-full sm:h-96 md:w-full md:h-auto">
-          <img src="./img/mv04.jpg" alt="Main Background Image" class="w-full h-full object-cover sm:w-full sm:h-96 md:w-full md:h-auto">
+          <img src="./img/mv02.jpg" alt="Main Background Image"
+            class="w-full h-full object-cover active sm:w-full sm:h-96 md:w-full md:h-auto">
+          <img src="./img/mv03.jpg" alt="Main Background Image"
+            class="w-full h-full object-cover sm:w-full sm:h-96 md:w-full md:h-auto">
+          <img src="./img/mv04.jpg" alt="Main Background Image"
+            class="w-full h-full object-cover sm:w-full sm:h-96 md:w-full md:h-auto">
           <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
             <!-- float-textのクラス名をつけてアニメを追加 -->
             <h1 class="mb-8 text-5xl font-bold text-white text-nowrap float-text">セカイを変えるチーズを作ろう</h1>
@@ -87,11 +92,11 @@
         <p class="mb-14">現役チーズ職人のアドバイスのもと、作られました。
         </p>
         <!-- １段目 -->
-        <div class="fadeIn flex items-center justify-center  w-full max-w-[1200px] mx-auto bg-slate-50">
-          <div class="w-1/2">
+        <div class="flex items-center justify-center  w-full max-w-[1200px] mx-auto bg-slate-50">
+          <div class="js_box w-1/2">
             <img src="./img/c01.jpg" alt="">
           </div>
-          <div class=" w-1/2 flex items-center justify-center">
+          <div class="js_box w-1/2 flex items-center justify-center">
             <span>
               <h2 class="text-lg font-bold mb-10">本格的な農園を使った<span class="text-amber-500">実地研修</span></h2>
               <p>チーズアカデミーでは、本格的な農園を使った実地研修を</p>
@@ -107,7 +112,7 @@
         </div>
         <!-- ２段目 -->
         <div class="flex items-center justify-center  w-full max-w-[1200px] mx-auto bg-slate-50">
-          <div class="w-full flex items-center justify-center">
+          <div class="js_box w-full flex items-center justify-center">
             <span>
               <h2 class="text-lg font-bold mb-10"><span class="text-amber-500">必要な知識</span>もしっかりと取得</h2>
               <p>チーズ作りには、しっかりとした食に関する知識が</p>
@@ -120,17 +125,17 @@
               </p>
             </span>
           </div>
-          <div class="w-full">
+          <div class="js_box w-full">
             <img src="./img/c02.jpg" alt="">
           </div>
         </div>
+        <!-- ３段目 -->
         <div class="flex justify-center  w-full max-w-[1200px] mx-auto bg-slate-50">
-          <div class="w-full ">
+          <div class="js_box w-full ">
             <img src="./img/c03.jpg" alt="">
           </div>
-          <!-- ３段目 -->
           <div class="w-full  flex items-center justify-center flex-col">
-            <div>
+            <div class="js_box">
               <h2 class="text-lg font-bold mb-10"><span class="text-amber-500">卒業制作</span>はティスティング審査あり</h2>
               <p>チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。</p>
               <p>卒業制作として、チーズ作りを実際に行います。卒業後、
@@ -156,7 +161,7 @@
         <p class="text-lg mb-16">
           ニュース
         </p>
-        <div class="flex  gap-8">
+        <div class="js_box flex gap-8">
           <div class="w-[300px] hover:opacity-60">
             <img src="./img/n01.jpg" alt="">
             <p class="mt-8 mb-6">2016/11/18</p>
@@ -308,13 +313,16 @@
               </tr>
             </table>
             <div class="flex justify-center">
-              <button type="submit" class="w-80 h-14 text-lg text-white bg-amber-300 hover:bg-red-500 mt-8">送信</button>
+              <button type="submit" class="w-80 h-14 text-lg text-white bg-amber-300 rounded-full hover:bg-red-500 mt-8">送信</button>
             </div>
           </form>
       </section>
       <!-- CONTACT [end] -->
       <!-- ページトップボタン -->
-      <button id="topbtn">top</button>
+      <!-- なせかTailwindではむりだった -->
+      <button id="topbtn" style="position: fixed; bottom: 20px; right: 20px; background-color: rgba(75, 85, 99, 0.8); color: #FFFFFF; padding: 10px 20px; border-radius: 9999px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); display: none;">∧</button>
+
+
     </main>
     <!-- main [end] -->
     <!-- footer [start] -->

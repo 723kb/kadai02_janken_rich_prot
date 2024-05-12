@@ -104,7 +104,13 @@ $(window).on('scroll load', function(){        /* ページロード時、また
       });
     });
 
-
+    //  下からふわっと出てくるプラグイン
+    ScrollReveal().reveal('.js_box', { 
+      duration: 2000, // アニメーションの完了にかかる時間
+      viewFactor: 0.5, // 0~1,どれくらい見えたら実行するか
+      reset: true,   // 何回もアニメーション表示するか
+      mobile: false   //モバイルブラウザでアニメーションを無効にする
+    });
 
 
 
